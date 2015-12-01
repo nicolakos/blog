@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Categories | Blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><h1>Blog</h1></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="posts.html">Posts</a></li>
+            <li class="active"><a href="categories.html">Categories</a></li>
+            <li><a href="users.html">Users</a></li>
+          </ul>
+
+          <form class="search-form navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+      <!--     <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form> -->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="well">
+              <h2 class="page-header">Manage Categories <a href="new.html" class="btn btn-success">Add New</a></h2>
+                <table class="table table-striped">
+                  <tr>
+                    <th>Cetegory Title</th>
+                    <th>Actions</th>
+                  </tr>
+                  <tr>
+                    <td>Category Number One</td>
+                    <td><a class="btn btn-primary" href="">Edit</a> <a href="" class="btn btn-danger">Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>Category Number Two</td>
+                    <td><a class="btn btn-primary" href="">Edit</a> <a href="" class="btn btn-danger">Delete</a></td>
+                  </tr>
+                  <tr>
+                    <td>Category Number Three</td>
+                    <td><a class="btn btn-primary" href="">Edit</a> <a href="" class="btn btn-danger">Delete</a></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <p>Copuright &copy; 2015 Blog | <a href="login.html">Admin Login</a></p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+  </body>
+</html>
