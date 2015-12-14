@@ -23,9 +23,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="index.html"><%= link_to "Home", root_path %></a></li>
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Contact", contact_path %></li>
           </ul>
 
           <form class="search-form navbar-form navbar-right" role="search">
@@ -52,23 +52,25 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
+            <!-- Alerts & Messages-->
+
+            <% if flash[:notice] %>
+              <div class="alert alert-success"><% if flash[:notice] %><% end %></div>
+            <% end %>
+            <% if flash[:alert] %>
+              <div class="alert alert-danger"><% if flash[:alert] %><% end %></div>
+            <% end %>
+
             <%= yield %>
           </div>
           <div class="col-md-4">
-            <div class="list-group">
-              <a href="#" class="list-group-item">News</a>
-              <a href="#" class="list-group-item">Tutorials</a>
-              <a href="#" class="list-group-item">Releases</a>
-              <a href="#" class="list-group-item">Events</a>
-            </div>
+            <%= render 'partials/sidebar' %>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
-        <p>Copuright &copy; 2015 Blog | <a href="login.html">Admin Login</a></p>
-      </footer>
+    <%= render 'partials/footer' %>
     </div> <!-- /container -->
 
 

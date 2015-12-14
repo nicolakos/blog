@@ -4,17 +4,6 @@ body{
   line-height: 1.6em;
 }
 
-footer{
-  text-align: center;
-  margin-top: 30px;
-  background-color: #36424a;
-  padding: 20px 0;
-  border-top: 1px  solid #666;
-  color: #fff;
-}
-footer p{
-  margin: 0px;
-}
 .navbar{
   overflow: auto;
   min-height: 100px;
@@ -38,9 +27,9 @@ footer p{
   color: #ff953f;
 }
 
-// .navbar a:.navbar-brand:hover{
-//   color: #fff !important;
-// }
+.navbar a.navbar-brand:hover{
+  color: #fff !important;
+}
 
 .navbar ul{
   margin-top: 22px;
@@ -48,7 +37,7 @@ footer p{
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover{
   background: none;
-  color: #ff953f!important;
+  color: $secondary-color !important;
 }
 
 .search-form{
@@ -79,7 +68,7 @@ footer p{
 }
 
 .btn-primary{
-  background: #ff953f;
+  background: $primary-btn-color;
 }
 .btn:hover{
   background-color: #ccc;
@@ -104,9 +93,21 @@ footer p{
 }
 
 .post small{
-  background: #36424a;
+  background: $primary-color;
   color:#fff;
   display: block;
   margin: 10px 0;
   padding: 5px 10px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 30px;
+  background-color: $primary-color;
+  padding: 20px 0;
+  border-top: 1px  solid #666;
+  color: #fff;
+}
+footer p{
+  margin: 0px;
 }
