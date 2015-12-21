@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails', '~> 6.1', '>= 6.1.2'
-gem 'bcrypt-ruby', :require => "bcrypt"
+gem 'bcrypt', :require => "bcrypt"
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'simple_form'
 

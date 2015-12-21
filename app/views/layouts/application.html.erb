@@ -23,9 +23,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html"><%= link_to "Home", root_path %></a></li>
-            <li><%= link_to "About", about_path %></li>
-            <li><%= link_to "Contact", contact_path %></li>
+            <li class="<%= params[:controller] == 'posts' ? 'active' : '' %>"><%= link_to "Home", root_path %></li>
+            <li class="<%= params[:controller] == 'about' ? 'active' : '' %>"><%= link_to "About", about_path %></li>
+            <li class="<%= params[:controller] == 'contact' ? 'active' : '' %>"><%= link_to "Contact", contact_path %></li>
           </ul>
 
           <form class="search-form navbar-form navbar-right" role="search">
