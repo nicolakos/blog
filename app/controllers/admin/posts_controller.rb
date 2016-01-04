@@ -22,7 +22,7 @@ class Admin::PostsController < Admin::ApplicationController
   def update
     @post = Post.find(params[:id])
 
-    if @post.update(Post_params)
+    if @post.update(post_params)
       flash[:notice] = 'Post Updated'
       redirect_to admin_posts_path
     else
@@ -52,7 +52,7 @@ class Admin::PostsController < Admin::ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :category_id, :user_id, :image, :body, :tags)
+    params.permit(:title, :category_id, :user_id, :image, :body, :tags)
   end
 
 end
