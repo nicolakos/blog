@@ -8,7 +8,7 @@ class Admin::UsersController < Admin::ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      flash[:notice] = 'user Created'
+      flash[:notice] = 'User Created'
       redirect_to admin_users_path
     else
       render 'new'
